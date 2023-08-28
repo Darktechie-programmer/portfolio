@@ -1,0 +1,540 @@
+<!-- header navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <img
+          class="img-50"
+          src="../assets/icons/code-lappy.svg"
+          alt="laptop_img"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item margin-li-30">
+            <a class="nav-link link-color" href="#home">Home</a>
+          </li>
+          <li class="nav-item margin-li-30">
+            <a class="nav-link link-color" href="#about">About</a>
+          </li>
+          <li class="nav-item margin-li-30">
+            <a class="nav-link link-color" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item margin-li-30">
+            <a class="nav-link link-color" href="#tools">Tools</a>
+          </li>
+          <li class="nav-item margin-li-30">
+            <a class="nav-link link-color" href="#projectSkills">Project</a>
+          </li>
+          <li class="nav-item margin-li-30">
+            <a class="nav-link link-color" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- main part -->
+<section id="home">
+  <section class="d-flex position-relative" id="bg-img">
+    <div class="position-absolute middle-container-name-section">
+      <div #name class="text-light user-name">AK SINGH</div>
+      <div class="slider text-light">
+        <p class="slider_text1">FULL Stack Developer</p>
+        <p>Software Engineer</p>
+        <p>while(!(succeed = try()))</p>
+      </div>
+      <div class="d-flex mt-1">
+        <a
+          class="btn btn-outline-secondary me-3"
+          href="../assets/myResume.pdf"
+          target="_blank"
+        >
+          Resume
+        </a>
+        <a
+          class="btn btn-outline-secondary"
+          target="_blank"
+          href="https://www.gmail.com"
+        >
+          Message me
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="d-flex justify-content-end">
+    <div
+      class="scrollBtn"
+      id="top_screen"
+      *ngIf="showButton"
+      (click)="onScrollUp()"
+    >
+      <i class="fas fa-chevron-circle-up fa-2x"></i>
+    </div>
+  </div>
+
+  <!-- middle part -->
+  <section class="main-container-section">
+    <!-- about me section -->
+    <section
+      class="color-white"
+      [ngClass]="{
+        top_screen_clicked: showButton,
+        top_screen_removed: !showButton
+      }"
+      id="about"
+    >
+      <div class="row padding-100">
+        <div
+          id="my_img_div"
+          class="offset-1 col-md-4 col-xm-12"
+          data-aos="zoom-in-up"
+        >
+          <img
+            class="rounded-3"
+            src="../assets/images/myimage.jpg"
+            alt="my_img"
+            id="my_img"
+          />
+        </div>
+        <div class="offset-1 col-md-5 col-xm-12" data-aos="zoom-in-up">
+          <div class="intro-font">
+            Hi! I'm Amit Kumar, <br />
+            A Full Stack Developer <br />
+            From Jaipur, Raj., India.
+          </div>
+          <div class="intro-description">
+            I am a Full stack developer and enthusiastic programmer with good
+            knowledge of front & back-end technologies. I love structure and
+            order and I also stand for quality. I love spending time on fixing
+            little details and optimizing web apps. Also I like working in a
+            team.
+          </div>
+          <div class="intro-tag">Let's build something cool</div>
+          <div>
+            <div class="mt-1">
+              <span class="text-primary intro-contact-info">Mail: </span>
+              <span class="text-secondary marker">
+                kumaramit26037@gmail.com
+              </span>
+            </div>
+            <div class="mt-1">
+              <span class="text-primary intro-contact-info">LinkedIn: </span>
+              <span class="text-secondary marker">
+                https://www.linkedin.com/in/amit-kumar-techie/
+              </span>
+            </div>
+            <div class="mt-1">
+              <span class="text-primary intro-contact-info"> Github: </span>
+              <span class="text-secondary marker">
+                https://github.com/Darktechie-programmer
+              </span>
+            </div>
+            <div class="mt-1">
+              <span class="text-primary intro-contact-info"> HackerRank: </span>
+              <span class="text-secondary marker">
+                https://www.hackerrank.com/Amit_Kumar_?hr_r=1
+              </span>
+            </div>
+            <div class="mt-1">
+              <span class="text-primary intro-contact-info">
+                StackOver Follow:
+              </span>
+              <span class="text-secondary marker">
+                https://stackoverflow.com/users/10321342/aksingh
+              </span>
+            </div>
+          </div>
+          <div class="margin-top-50">
+            <a
+              class="btn btn-outline-primary"
+              href="../assets/myResume.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hr-line" />
+
+    <!-- Project  section-->
+    <!-- <section>
+          <div>Project</div>
+          <div>Here are some applications that I have developed</div>
+        </section> -->
+
+    <!-- <hr /> -->
+
+    <!-- Skills section -->
+    <section class="color-white" id="skills">
+      <div>
+        <div class="heading-section">Skills</div>
+        <div class="sub-heading-section">
+          Languages and Technologies that I have learned and applied to my
+          projects.
+        </div>
+        <div class="container skills-icon-section">
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/c++.png" alt="logo" />
+            <p>C++</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/javascript.png" logo />
+            <p>Javascript</p>
+            <p></p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/html5.png"
+              alt="logo"
+            />
+            <p>HTML5</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/css3.png" alt="logo" />
+            <p>CSS3</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/mongodb.png"
+              alt="logo"
+            />
+            <p>MongoDB</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-50" src="../assets/icons/expressjs3.png" alt="logo" />
+            <p>Express JS</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/nodejs.jpg"
+              alt="logo"
+            />
+            <p>Node JS</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/Bootstrap_logo.png"
+              alt="logo"
+            />
+            <p>Bootstrap JS</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/jquery.png"
+              alt="logo"
+            />
+            <p>Bootstrap JS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hr-line" />
+
+    <!-- Tools -->
+
+    <section class="color-white" id="tools">
+      <div>
+        <div class="heading-section">Tools</div>
+        <div class="sub-heading-section">
+          My tools that help me to tackle any project.
+        </div>
+
+        <div class="container skills-icon-section">
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/vsCode.png" />
+            <p>VS Code</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/git.png" alt="logo" />
+            <p>Git</p>
+            <p></p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/GitHub2.png"
+              alt="logo"
+            />
+            <p>GitHub</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/slack.png"
+              alt="logo"
+            />
+            <p>Slack</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-65" src="../assets/icons/npm.png" alt="logo" />
+            <p>NPM</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/atom.png" alt="logo" />
+            <p>Atom</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/netlify.png"
+              alt="logo"
+            />
+            <p>Netlify</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/aws.png" alt="logo" />
+            <p>AWS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hr-line" />
+
+    <!-- Project Skills -->
+    <section class="color-white" id="projectSkills">
+      <div>
+        <div class="heading-section">Project Skills</div>
+        <div class="sub-heading-section">
+          After three years of industry experience, I have acquired these
+          skills.
+        </div>
+
+        <div class="container skills-icon-section">
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/angular.png" />
+            <p>Angular</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/angularMaterial.png"
+              alt="logo"
+            />
+            <p>Angular Material</p>
+            <p></p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-85"
+              src="../assets/icons/Bitbucket.png"
+              alt="logo"
+            />
+            <p>Bit Bucket</p>
+            <p></p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/eslint-and-prettier-logo.png"
+              alt="logo"
+            />
+            <p>Prettier & ES Lint</p>
+            <p></p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/lambda.png"
+              alt="logo"
+            />
+            <p>lambda</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/aws-s3.png"
+              alt="logo"
+            />
+            <p>AWS S3</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/api-gateway.png"
+              alt="logo"
+            />
+            <p>Api-Gateway</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/aws-rds.png"
+              alt="logo"
+            />
+            <p>AWS RDS</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/Amazon-dynamoDB2.png"
+              alt="logo"
+            />
+            <p>DynamoDB</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img class="height-100" src="../assets/icons/amazon-vpc.png" logo />
+            <p>AWS VPC</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/aws-sns.png"
+              alt="logo"
+            />
+            <p>AWS SNS</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/aws-sqs.png"
+              alt="logo"
+            />
+            <p>AWS SQS</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/aws-cloudfront.png"
+              alt="logo"
+            />
+            <p>AWS Cloudfront</p>
+          </div>
+          <div class="icon-lang" data-aos="zoom-in-up">
+            <img
+              class="height-100"
+              src="../assets/icons/aws-secrets-manager.png"
+              alt="logo"
+            />
+            <p>AWS Secret Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hr-line" />
+
+    <!-- contact us -->
+    <section class="color-white" id="contact">
+      <div class="row contact-main-section">
+        <div class="offset-1 col-md-4 col-xm-12">
+          <div class="left-title-msg">I can Help</div>
+          <div class="left-title-sub-msg">
+            I'm currently available for freelance work.
+          </div>
+          <div>
+            <a
+              class="btn btn-outline-secondary mt-4"
+              target="_blank"
+              href="https://www.gmail.com"
+            >
+              Message me
+            </a>
+          </div>
+        </div>
+        <div class="offset-1 col-md-4 col-xm-12">
+          <h1 class="contact-heading">Contact Info</h1>
+          <div class="right-sub-msg">
+            If you have a project that you want to get started, think you need
+            my help with something or just fancy saying hey, then get in touch.
+          </div>
+          <div class="padding-left-right">
+            <div class="d-flex right-icon-info">
+              <div class="right-icon-info-div">
+                <img
+                  class="height-47"
+                  src="../assets/icons/location.png"
+                  alt="logo"
+                />
+              </div>
+              <div>
+                <div>Location</div>
+                <div class="location">Jaipur, Rajasthan, India.</div>
+              </div>
+            </div>
+            <div class="d-flex logo-icon-size">
+              <div class="margin-right-40">
+                <img
+                  class="height-47"
+                  src="../assets/icons/Gmail-logo.png"
+                  alt="logo"
+                />
+              </div>
+              <div>
+                <div>Email</div>
+                <div class="email-color marker">kumaramit26037@gmail.com</div>
+              </div>
+            </div>
+            <div class="d-flex logo-icon-size">
+              <div class="margin-right-40">
+                <img
+                  class="height-47"
+                  src="../assets/icons/instagram.png"
+                  alt="logo"
+                />
+              </div>
+              <div>
+                <div>Instagram</div>
+                <div>
+                  <a
+                    class="insta-color"
+                    href="https://www.instagram.com/techie__/"
+                    >techie__</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- footer part -->
+  <footer>
+    <div class="footer-main-container">
+      <div>
+        <div class="mb-2">
+          <img
+            class="me-3 marker"
+            src="../assets/icons/linkedin-icon.png"
+            (click)="openLinkedIn()"
+            alt="logo"
+          />
+          <img class="me-3 marker" (click)="openGitHub()" src="../assets/icons/github-icon.png" alt="logo" />
+          <img
+            class="marker"
+            src="../assets/icons/file-resume.png"
+            alt="logo"
+            (click)="downloadResume()"
+          />
+        </div>
+        <div>
+          &copy; Copyright - &reg; 2021-2023 By Amit Kumar, All Right Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
